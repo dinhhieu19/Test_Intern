@@ -92,7 +92,9 @@ const NewTask = (props) => {
                                         date,
                                         piority
                                     })
-                                    document.querySelector('.show').classList.remove('show')
+                                    if(document.querySelector('.show')){
+                                        document.querySelector('.show').classList.remove('show')
+                                    }
                                     setTitle('')
                                     setDes('')
                                     setPiority('2')
@@ -112,7 +114,9 @@ const NewTask = (props) => {
                                         piority
                                     })
     
-                                    document.querySelector('.show').classList.remove('show')
+                                    if(document.querySelector('.show')){
+                                        document.querySelector('.show').classList.remove('show')
+                                    }
                                 }
                                 
                             }
