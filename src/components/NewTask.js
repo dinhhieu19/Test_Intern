@@ -9,10 +9,10 @@ const NewTask = (props) => {
     const {idProps, titleProps, desProps, piorityProps, dateProps} = props
 
     useEffect(()=>{
-        titleProps != undefined ? setTitle(titleProps) : setTitle('')
-        desProps != undefined ? setDes(desProps) : setDes('')
-        dateProps != undefined ? setDate(dateProps) : setDate(new Date().toISOString().slice(0, 10))
-        piorityProps != undefined ? setPiority(piorityProps) : setPiority('2')
+        titleProps !== undefined ? setTitle(titleProps) : setTitle('')
+        desProps !== undefined ? setDes(desProps) : setDes('')
+        dateProps !== undefined ? setDate(dateProps) : setDate(new Date().toISOString().slice(0, 10))
+        piorityProps !== undefined ? setPiority(piorityProps) : setPiority('2')
     }, [titleProps, desProps, piorityProps, dateProps])
 
     return (
