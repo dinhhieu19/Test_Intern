@@ -15,7 +15,6 @@ function* getListItem({ payload }) {
       console.log(dataSearch)
     }
 
-    // console.log(storageItem)
     yield put(
       actions.getListItemS({
         listItem: dataSearch === '' ? storageItem : dataSearch

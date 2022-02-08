@@ -15,6 +15,7 @@ const NewTask = (props) => {
         piorityProps !== undefined ? setPiority(piorityProps) : setPiority('2')
     }, [titleProps, desProps, piorityProps, dateProps])
 
+    
     return (
         <div>
             <div>
